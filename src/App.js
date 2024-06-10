@@ -8,7 +8,7 @@ import Contact from './Pages/Contact';
 import Navbar from './Component/Navbar/Navbar';
 function App() {
   return (
-    <div className="App">
+    <div >
  <BrowserRouter>
  <Navbar/>
  <Routes>

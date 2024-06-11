@@ -88,7 +88,7 @@ const Home = () => {
           <input type='textarea' placeholder='enter your message' name='message'/>
           </textarea>
          </div>
-         <button className='btn-form'>contact</button>
+         <button className='btn-form'>Submit</button>
          </form>
            </div>
            </div>

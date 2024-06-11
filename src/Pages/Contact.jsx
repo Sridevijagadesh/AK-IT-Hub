@@ -27,7 +27,7 @@ const Contact = () => {
           <input type='textarea' placeholder='enter your message' name='message'/>
           </textarea>
          </div>
-         <button className='btn-form'>contact</button>
+         <button className='btn-form'>sumbit</button>
          </form>
            </div>
            </div>

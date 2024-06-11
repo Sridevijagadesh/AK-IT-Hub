@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Pages/CSS/home.css'
 import home_img from '../Component/assest/Home.png.png'
+import {Link} from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
             
             <h1>Welcome to our website</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam suscipit quidem quos temporibus illo hic. Magni, sunt deserunt! Expedita iure recusandae, eveniet magni voluptates aliquam fugit odit autem repellat. Vitae!</p>
-            <button>Read MORE</button>
+           <Link to='/about'> <button>Read MORE</button></Link>
            </div>
             <div className='about-web'>
               <img src='https://i.pinimg.com/originals/af/7b/7a/af7b7a8ee3766dcf960c3c2f9d6010ac.jpg' alt=''/>

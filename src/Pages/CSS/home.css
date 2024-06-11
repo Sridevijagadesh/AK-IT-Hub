@@ -1,4 +1,7 @@
 
+body{
+  background-color: #49555C;
+}
 .home {
   /* background: linear-gradient(to left top , rgb(115, 115, 239) , rgb(247, 139, 157), rgb(65, 65, 223) rgb(232, 66, 232)); */
   /* background: red; */
@@ -51,15 +54,33 @@ padding: 10px;
   height: 600px;
  object-fit: contain;
 }
-.about, .service {
+.about{
   background-color: #49555C;
   height: 70vh;
+  margin-top: 70px;
 
 }
 .service {
   background-color: #49555C;
   height: 70vh;
+  margin-top: 70px;
 
+}
+.about-web1 .button1{
+  background: linear-gradient(to left top ,rgba(14, 1, 14, 0.016), #273035,rgba(0, 8, 8, 0));
+  margin-top: 20px;
+  padding: 10px 25px;
+  border:  none;
+   color: wheat;
+  font-size: 18px;
+  font-weight: bold;
+  width: 400px;
+  transition: ease-in-out 1s all;
+
+}
+.button1:hover{
+  padding: 10px;
+  color: red;
 }
 .about-container , .service-header{
  text-align: center;
@@ -147,6 +168,7 @@ row-gap: 10px;
 .contact{
   height: 70vh;
   background-color: #49555C;
+  margin-top: 70px;
 }
 .contact h1{
   text-align: center;

@@ -2,13 +2,22 @@
   margin: 0;
   padding: 0;
 }
+ /* .active{
+  color: aquamarine;
+ } */
  
 .navbar{
   display: flex;
   justify-content: space-between;
   padding: 16px;
   height: 40px;
-  background-color: rgb(3,23,63);
+  background-color: #273035;
+z-index: 1;
+margin-bottom: 1px;
+position: fixed;
+top: 0;left: 0;
+right: 0;
+
 }
 .nav-log{
   display: flex;
@@ -30,7 +39,7 @@
   color: #626262;
   font-size: 20px;
   font-weight: 500;
-  transition: 1s ease-in-out;
+  transition: 2s ease-in-out;
  
 
 
@@ -45,7 +54,7 @@
   gap: 3px;
   margin: 35px;
   cursor: pointer;
-  transition: 0.1s linear all;
+  transition: 0.8s linear all;
 
 }
 .link:hover{

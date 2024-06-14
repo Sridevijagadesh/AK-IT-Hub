@@ -10,13 +10,14 @@
   display: flex;
   justify-content: space-between;
   padding: 16px;
-  height: 40px;
-  background-color: #273035;
+  height: 70px;
+  background-color: #111111;
 z-index: 1;
 margin-bottom: 1px;
 position: fixed;
 top: 0;left: 0;
 right: 0;
+
 
 
 }
@@ -41,9 +42,6 @@ right: 0;
   font-size: 20px;
   font-weight: 500;
   transition: 2s ease-in-out;
- 
-
-
 }
 
 .link{
@@ -64,39 +62,48 @@ right: 0;
   padding: 5px 10px;
 
 }
-@media(max-width:600px){
-  .navbar{
-    display: flex;
-  flex-direction: column;
-  padding: 16px;
-height: 100%;
-  background-color: rgb(3, 23, 63);
-  }
-  .nav-log p{
- font-size: 20px;
- color: white;
- margin-left: -10px;
-}
-.nav-menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+ 
 
-  align-items: flex-start;
-  margin-top: 10px;
+.toogle div{
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background-color: red;
+}
+.toogle{
+  display: none;
   cursor: pointer;
-  gap :20px
 }
-.nav-menu li .link{
-display: flex;
-color: #fff;
-margin: 0;
-font-size: 18px;
-transition: 2s ease-in-out, all;
+
+ @media screen and (max-width: 768px){
+  .toogle{
+    display: block;
+  }
+  .nav-menu{
+    position: fixed;
+    top:7vh;
+    right: 0;
+    width: 50%;
+    height: 60vh;
+    background-color: #111111;
+    flex-direction: column;
+    transform: translate(100%);
+    transition: 0.5s ease-in;
+  }
+ }
+ /* Nav Active class*/
+
+ .nav__active{
+  transform: translateX(0);
+ }
+ /* toogler icon Animation   */
+.nav__toggle .line1{
+  transform: rotate(-45deg)  translate(-4px , 5px)
 }
-.nav-menu li .link:hover{
-    background-color: rgb(65, 123, 238);
-padding: 10px;
-box-shadow: 0 , 0, 0, rgb(0.1, 0.1,0);
+.nav__toggle .line2{
+  opacity: 0;
 }
+.nav__toggle .line3{
+  transform: rotate(45deg) translate(-4px , -5px)
 }
+

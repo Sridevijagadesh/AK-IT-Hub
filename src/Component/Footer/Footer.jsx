@@ -12,7 +12,7 @@ const Footer = () => {
     <FaTwitter/>
     <FaSnapchat/>
     </div>
-    <p>AT-IT-HUB <FaCopyright/> -2024</p>
+    <p>AK-IT-HUB <FaCopyright/> -2024</p>
     </div>
   )
 }

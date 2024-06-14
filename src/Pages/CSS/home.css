@@ -1,6 +1,6 @@
 
 body{
-  background-color: #49555C;
+  background-color: #151414; 
 }
 .home {
   /* background: linear-gradient(to left top , rgb(115, 115, 239) , rgb(247, 139, 157), rgb(65, 65, 223) rgb(232, 66, 232)); */
@@ -9,8 +9,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
-   height: 60vh;
-  background-color: #49555C;
+   height: 50vh;
+  background-color: #151414;
 }
 .home-box{
   display: flex;
@@ -55,15 +55,15 @@ padding: 10px;
  object-fit: contain;
 }
 .about{
-  background-color: #49555C;
+  background-color: #151414;
   height: 70vh;
   margin-top: 70px;
 
 }
 .service {
-  background-color: #49555C;
-  height: 70vh;
+background-color: #151414;  
   margin-top: 70px;
+  height: 70vh;
 
 }
 .about-web1 .button1{
@@ -167,7 +167,7 @@ row-gap: 10px;
 /* contact as */
 .contact{
   height: 70vh;
-  background-color: #49555C;
+  background-color: #151414; 
   margin-top: 70px;
 }
 .contact h1{
@@ -229,3 +229,51 @@ padding: 20px;
   font-weight: bold;
   margin-top: 8px;
 }
+
+
+
+/* media query */
+
+/* @media screen and (max-width: 768px){
+.home , .about-web, .service{
+  display: flex;
+  height: 70vh;
+ flex-direction: column;
+  position: relative;
+  top: 70px;
+ left: 70px;
+
+}
+.home-box p ,.about-web1 p{
+  font-size: 18px;
+  font-weight: bold;
+  width: 70%;
+}
+.home-img {
+  margin-top: -150px;
+}
+.home-img img {
+  width: 300px;
+}
+.about-web2 img{
+  width: 200px;
+  height: 200px;
+}
+.about-web2{
+  margin-top: -50px;
+}
+.service-box1 ,.service-box {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0;
+width: 100px;
+gap: 20px;
+background-color: red;
+}
+.service-box1 img{
+  width: 200px;
+  height: 200px;
+}
+} */
+ 

@@ -20,7 +20,7 @@ Axios.post('http://localhost:8081/insert',{
        <div className='contact'>
           <h1>Contact As</h1>
            <div className='contact-box'>
-           <img src='https://designtlc.com/wp-content/uploads/2020/05/contact-us-blog.jpg' alt=''/>
+
            <div className='form-container'>
          <form  className='form' >
          <div className='form-group'>
@@ -38,7 +38,7 @@ Axios.post('http://localhost:8081/insert',{
          <div className='form-group'>
           <label htmlFor='message' className='form-label'>message</label>
      
-          <input type='textarea' placeholder='enter your message' name='message'onChange={(e)=>{setmessage(e.target.value)}}/>
+          <textarea placeholder='enter your message' name='message' className ='contact-textarea 'onChange={(e)=>{setmessage(e.target.value)}}/>
         
          </div>
          <button className='btn-form' onClick={myData}>sumbit</button>

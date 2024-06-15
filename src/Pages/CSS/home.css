@@ -11,6 +11,7 @@ body{
   justify-content: space-around;
    height: 50vh;
   background-color: #151414;
+ 
 }
 .home-box{
   display: flex;
@@ -19,40 +20,52 @@ body{
 
 }
 .home-box h1{
-  color: white;
-  font-size: 32px;
+  color: rgb(226, 197, 28);
+  -webkit-text-stroke: 0.9px #fff;
+  margin-bottom: 20px;
+  font-size:  45px;
   font-weight: bolder;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  
+
 }
 .home-box p{
   color: white;
   font-size: 18px;
   font-weight: 400;
-  width: 700px;
+  width: 500px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 .home-box .button{
-  background: linear-gradient(to left top ,rgba(14, 1, 14, 0.016), #273035,rgba(0, 8, 8, 0));
+  background:  rgb(219, 87, 11);
+
   margin-top: 20px;
   padding: 10px 25px;
   border:  none;
-   color: wheat;
+   color: white;
   font-size: 18px;
   font-weight: bold;
   width: 400px;
   transition: ease-in-out 1s all;
+  cursor: pointer;
+
 }
 .button:hover{
-padding: 10px;
-  color: red;
+margin: 20px;
+ 
 }
 .home-img img{
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
  object-fit: contain;
+margin-top: 20px;
+
+
+
+
 }
 .about{
   background-color: #151414;
@@ -67,7 +80,7 @@ background-color: #151414;
 
 }
 .about-web1 .button1{
-  background: linear-gradient(to left top ,rgba(14, 1, 14, 0.016), #273035,rgba(0, 8, 8, 0));
+  background:  rgb(219, 87, 11);
   margin-top: 20px;
   padding: 10px 25px;
   border:  none;
@@ -79,20 +92,18 @@ background-color: #151414;
 
 }
 .button1:hover{
-  padding: 10px;
-  color: red;
+margin: 10px;
+ 
 }
 .about-container , .service-header{
  text-align: center;
  margin-bottom: 20px;
- color: white;
+ color: rgb(219, 87, 11);;
+
  font-size: 18px;
  font-weight: bold;
 }
-.about-web img{
-  width: 400px;
-  height: 400px;
-}
+
 .about-web{
   display: flex;
 justify-content: space-around;
@@ -109,20 +120,24 @@ row-gap: 10px;
   margin-bottom: 20px;
   font-size: 38px;
   color: white;
+  margin-bottom: 15px;
+ 
 
   }
   .about-web1 p{
     font-size: 18px;
     color: white ;
+    margin-bottom: 20px;
   }
 .about-web img{
   width: 400px;
   height: 400px;
+  box-shadow:10px 5px 20px #fa690f;
 }
 /* service */
 .service-header{
  text-align: center;
- color: white;
+ color: rgb(219, 87, 11);
  margin-bottom: 20px;
 }
 .service-box {
@@ -130,32 +145,39 @@ row-gap: 10px;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 50px;
+
 }
 .service-box1 {
   width: 340px;
-  height: 400px;
+  height: auto;
+
+ 
+  border-radius: 20px;
 }
-.service-box1 img {
-  width: 300px;
-  height: 300px;
-  object-fit: fill;
+.service-box-img  img{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 20px;
   transition: all ease-in-out 1s;
+ margin-left: 50px;
+ margin-top: 10px;
+
+
 }
-.service-box1 img:hover{
-  padding: 20px;
-  border-radius: 20px;
+.service-box1:hover{
+  transform: scale(1.03);
 }
 .service-box1 h5{
   text-align: center;
-  color: white;
+  color: rgb(226, 197, 28);
+  -webkit-text-stroke: 0.9px #fff;
+  font-size: 21px;
   margin-bottom: 13px;
   cursor: pointer;
   transition: all ease-in-out 0.5s;
 }
-.service-box1 h5:hover{
-  color: red;
-}
+
 .service-box1 p{
   color: white;
   font-weight: 400;
@@ -168,33 +190,24 @@ row-gap: 10px;
 .contact{
   height: 70vh;
   background-color: #151414; 
-  margin-top: 70px;
-}
+    margin-top: 70px;
+} 
+  
 .contact h1{
   text-align: center;
-  color: white;
+  color: rgb(219, 87, 11);
 }
 .contact-box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact-box img{
-  width: 500px;
-  height: 400px;
-}
-/* .form-container{
-  
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-} */
+
 .form{
-width: 300px;
+width: 500px;
 padding: 20px;
-/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+box-shadow:10px 5px 20px #fa690f;
+margin-top: 20px;
 }
 .form h2{
   text-align: center;
@@ -219,7 +232,7 @@ padding: 20px;
   margin-top: 5px;
 }
 .form .btn-form{
-  background-color: rgb(5,121,121);
+  background-color: rgb(219, 87, 11);
   color: white;
   padding: 10px;
   width: 100%;
@@ -228,6 +241,10 @@ padding: 20px;
   cursor: pointer;
   font-weight: bold;
   margin-top: 8px;
+}
+.contact-textarea{
+  width: 100%;
+  padding: 10px;
 }
 
 

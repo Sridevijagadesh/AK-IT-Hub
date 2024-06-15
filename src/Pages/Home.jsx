@@ -42,7 +42,8 @@ Axios.post('http://localhost:8081/insert',{
             <div className='about-web1'>
             
             <h1>Welcome to our website</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam suscipit quidem quos temporibus illo hic. Magni, sunt deserunt! Expedita iure recusandae, eveniet magni voluptates aliquam fugit odit autem repellat. Vitae!</p>
+            <p>Welcome to AK IT Pvt Ltd, where innovation meets excellence.</p>
+            <p>With a proven track record of success and a relentless pursuit of innovation, we are committed to empowering businesses to thrive in today's fast-paced digital landscape.</p>
            <Link to='/about'> <button className='button1'>Read MORE</button></Link>
            </div>
             <div className='about-web2'>
@@ -57,22 +58,30 @@ Axios.post('http://localhost:8081/insert',{
             </div>
             <div className='service-box'>
               <div className='service-box1'>
+                <div className='service-box-img'>
               <img src='https://bizforcetech.com/wp-content/uploads/2022/05/choosing_managed_it_services_provider.png' alt=''/>
+              </div>
               <h5>AI ARTIFICAL INTELEGENT</h5>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
               </div>
               <div className='service-box1'>
+              <div className='service-box-img'>
               <img src='https://codup.co/wp-content/uploads/2021/08/full-stack-development.png' alt=''/>
+             </div>
               <h5>FULL STACK DEVELOPER</h5>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
               </div>
               <div className='service-box1'>
+              <div className='service-box-img'>
               <img src='https://www.allbusiness.com/media-library/machine-learning.jpg?id=32093222&' alt=''/>
+              </div>
               <h5>MACHINE LEARNING</h5>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
               </div>
               <div className='service-box1'>
+              <div className='service-box-img'>
               <img src='https://www.agroinfomart.com/images/og-subcategory1/service-provider.jpg' alt=''/>
+             </div>
               <h5>WEBSITE DEVELOPER</h5>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
               </div>
@@ -83,7 +92,7 @@ Axios.post('http://localhost:8081/insert',{
          <div className='contact'>
           <h1>Contact As</h1>
            <div className='contact-box'>
-           <img src='https://designtlc.com/wp-content/uploads/2020/05/contact-us-blog.jpg' alt=''/>
+
            <div className='form-container'>
          <form  className='form'>
          <div className='form-group'>
@@ -101,7 +110,7 @@ Axios.post('http://localhost:8081/insert',{
          <div className='form-group'>
           <label htmlFor='message' className='form-label'>message</label>
     
-          <input type='textarea' placeholder='enter your message' name='message' onChange={(e)=>{setmessage(e.target.value)}}/>
+          <textarea  placeholder='enter your message' name='message' className='contact-textarea ' onChange={(e)=>{setmessage(e.target.value)}}/>
     
          </div>
          <button className='btn-form' onClick={myData}>Submit</button>

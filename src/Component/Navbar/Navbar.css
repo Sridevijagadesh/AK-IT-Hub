@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
 }
- /* .active{
-  color: aquamarine;
- } */
+ .active{
+  background-color: #fa690f;
+  color: white;
+
+  display: inline-block;
+  padding: 5px 10px;
+ }
  
 .navbar{
   display: flex;
@@ -17,6 +21,7 @@ margin-bottom: 1px;
 position: fixed;
 top: 0;left: 0;
 right: 0;
+box-shadow:0 0 10px#fa690f;
 
 
 
@@ -27,7 +32,8 @@ right: 0;
   gap: 10px;
 }
 .nav-log p{
-  color: white;
+  color:transparent;
+  -webkit-text-stroke: 2px #fff;
   font-size: 38px;
   font-weight: bolder;
   margin-left: 80px;
@@ -57,9 +63,10 @@ right: 0;
 
 }
 .link:hover{
-  text-decoration: underline;
-  box-shadow: 0 0 20px rgba(79, 130, 233, 2);
+ 
+  box-shadow: 0 0 10px #fa690f;
   padding: 5px 10px;
+  background-color: #fa690f;;
 
 }
  
@@ -68,7 +75,7 @@ right: 0;
   width: 2rem;
   height: 0.2rem;
   margin: 0.4rem;
-  background-color: red;
+  background-color: #fa690f;
 }
 .toogle{
   display: none;

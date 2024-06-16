@@ -21,10 +21,10 @@ const Navbar = () => {
         <p>AK-IT-HUB</p> 
       </div>
       <ul className={active}>
-        <li ><NavLink to='/' className='link ' onClick={toogleIcon} >Home</NavLink></li>
-        <li><NavLink to='/about'  className='link' onClick={toogleIcon}>About</NavLink></li>
-        <li><NavLink to='/service'  className='link' onClick={toogleIcon}>service</NavLink></li>
-        <li><NavLink to='/contact' className='link' onClick={toogleIcon}>contact</NavLink></li>
+        <li ><NavLink to='/' className='link ' onClick={navToggle} >Home</NavLink></li>
+        <li><NavLink to='/about'  className='link' onClick={navToggle}>About</NavLink></li>
+        <li><NavLink to='/service'  className='link' onClick={navToggle}>service</NavLink></li>
+        <li><NavLink to='/contact' className='link' onClick={navToggle}>contact</NavLink></li>
       </ul>
 <div  className={toogleIcon} onClick={navToggle}>
   <div className="line1"></div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedin , FaInstagram , FaWhatsapp ,FaCopyright , FaTwitter, FaSnapchat, FaAngleRight ,FaPhone,FaEnvelope, FaLocationPin } from "react-icons/fa6";
+import { FaLinkedin , FaInstagram , FaWhatsapp ,FaCopyright , FaTwitter, FaAngleRight ,FaPhone,FaEnvelope, FaLocationPin } from "react-icons/fa6";
 import '../Footer/Footer.css'
 const Footer = () => {
   return (

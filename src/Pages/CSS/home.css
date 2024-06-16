@@ -76,7 +76,7 @@ margin-top: 20px;
 .service {
 background-color: #151414;  
   margin-top: 70px;
-  height: 70vh;
+  height: auto
 
 }
 .about-web1 .button1{
@@ -250,48 +250,45 @@ margin-top: 20px;
 
 
 
-/* media query */
 
-/* @media screen and (max-width: 768px){
-.home , .about-web, .service{
+
+ @media screen and (max-width: 768px){
+
+  h1{
+    font-size: 24px;
+  }
+ 
+.home ,.about ,.service{
   display: flex;
-  height: 70vh;
- flex-direction: column;
-  position: relative;
-  top: 70px;
- left: 70px;
+  flex-direction: column;
+  margin-top: 100px;
 
+}.home-box h1 , .about-web h1{
+  font-size: 28px;
 }
-.home-box p ,.about-web1 p{
-  font-size: 18px;
-  font-weight: bold;
-  width: 70%;
-}
-.home-img {
-  margin-top: -150px;
-}
-.home-img img {
+.home-box p , .about-web p{
+  font-size: 12px;
   width: 300px;
 }
-.about-web2 img{
-  width: 200px;
-  height: 200px;
+
+.home-img img ,.about-web2 img{
+width:  300px;
+height: 200px;
+margin-top: 0;
 }
-.about-web2{
-  margin-top: -50px;
+.about-web{
+  display: flex;
+  flex-direction: column;
+
+}.service-box1{
+  width: 320px;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+margin-bottom: 10px;
 }
-.service-box1 ,.service-box {
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin: 0;
-width: 100px;
-gap: 20px;
-background-color: red;
-}
-.service-box1 img{
-  width: 200px;
-  height: 200px;
-}
-} */
+
+ }
+
+
  

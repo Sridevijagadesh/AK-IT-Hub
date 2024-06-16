@@ -24,6 +24,7 @@ const Navbar = () => {
         <li ><NavLink to='/' className='link ' onClick={navToggle} >Home</NavLink></li>
         <li><NavLink to='/about'  className='link' onClick={navToggle}>About</NavLink></li>
         <li><NavLink to='/service'  className='link' onClick={navToggle}>service</NavLink></li>
+        <li><NavLink to='/team'  className='link' onClick={navToggle}>Team</NavLink></li>
         <li><NavLink to='/contact' className='link' onClick={navToggle}>contact</NavLink></li>
       </ul>
 <div  className={toogleIcon} onClick={navToggle}>

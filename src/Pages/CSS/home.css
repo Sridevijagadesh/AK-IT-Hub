@@ -231,6 +231,8 @@ row-gap: 10px;
 .team-box1 img{
   width: 300px;
   margin-left: 70px;
+  border-radius: 50%;
+  background-color: #fa690f;
 }
 
 /* contact as */

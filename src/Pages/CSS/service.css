@@ -1,0 +1,66 @@
+.service-banner{
+  background-image: url('https://hospitalityinsights.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/service-culture.jpeg' );
+  width: 100%;
+  min-height: 70vh;
+  margin-top: 70px;
+  }
+  .service-banner1{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin: auto;
+   min-height:60vh;
+}
+.service-banner1 h1{
+  font-size: 34px;
+  color: rgb(226, 197, 28);
+  -webkit-text-stroke: 0.9px #fff;
+
+}
+.service-banner1 button{
+  background:  rgb(219, 87, 11);
+
+  margin-top: 20px;
+  padding: 10px 25px;
+  border:  none;
+   color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  transition: ease-in-out 0.5s all;
+  cursor: pointer;
+}
+.service-banner1 button:hover{
+  background-color: green;
+}
+.service-content p{
+  margin: 30px  20px ;
+  font-size: 18px;
+  text-align: center;
+
+}
+.service-content h1{
+ margin-top: 50px;
+  text-align: center;
+}
+.service-row{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+  .service-row1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+ 
+  }
+  .service-row1 p{
+    margin-bottom: 20px;
+  }
+  .service-row img{
+    width: 500px;
+    height: 500px;
+  }

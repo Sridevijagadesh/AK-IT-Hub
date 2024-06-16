@@ -88,6 +88,36 @@ Axios.post('http://localhost:8081/insert',{
               
           </div>
          </div>
+
+         {/* OUR team */}
+         <div className='team-container'>
+          <h1>Our Leadership team</h1>
+          <p>with over 10 years of experiene , we've got a well-seasoned team at the help</p>
+          <div className='team-box'>
+            <div className="team-box1">
+            <img src='https://cdn3.iconfinder.com/data/icons/avatars-flat/33/man_5-1024.png' alt=''></img>
+            <h4>Mr. Amith kapure</h4>
+            <p>CO-FOUNDER</p>
+            </div>
+            <div className="team-box1">
+            <img src='https://cdn3.iconfinder.com/data/icons/avatars-flat/33/man_5-1024.png' alt=''></img>
+            <h4>Mr. Amith kapure</h4>
+            <p>Frontend Developer</p>
+            </div>
+            <div className="team-box1">
+            <img src='https://cdn3.iconfinder.com/data/icons/avatars-flat/33/man_5-1024.png' alt=''></img>
+            <h4>Mr. Amith kapure</h4>
+            <p>Backend Developer(PHP)</p>
+            </div>
+            <div className="team-box1">
+            <img src='https://cdn3.iconfinder.com/data/icons/avatars-flat/33/man_5-1024.png' alt=''></img>
+            <h4>Mr. Amith kapure</h4>
+            <p>Backend Developer(Node Js)</p>
+            </div>
+
+          </div>
+         
+         </div>
          {/* contact as */}
          <div className='contact'>
           <h1>Contact As</h1>

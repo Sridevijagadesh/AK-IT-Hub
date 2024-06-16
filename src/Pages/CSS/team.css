@@ -1,0 +1,29 @@
+.team{
+width: 100%;
+margin-top: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.team h1{
+  text-align: center;
+  font-size: 38px;
+  color: rgb(226, 197, 28);
+  -webkit-text-stroke: 0.9px #fff;
+}
+.team p , .team h4{
+  text-align: center;
+margin-top: 20px;
+font-weight: bolder;
+font-size: 32px;
+color: #fa690f;
+-webkit-text-stroke: 0.1px #fff;
+
+}
+.team img{
+  margin-top: 40px;
+  width: 40%;
+  height: 30%;
+
+}

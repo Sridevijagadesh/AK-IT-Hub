@@ -1,12 +1,15 @@
 import React from 'react'
+import '../Pages/CSS/team.css'
 
 const Team = () => {
   return (
     <div>
       <div className='team'>
         <h1>OUR TEAM</h1>
-        <p>Our </p>
-        <img src='https://static.vecteezy.com/system/resources/previews/002/280/225/original/teamwork-banner-vector.jpg' alt=''/>
+        <h4>TEAM COMING TOGETHER IS A BEGINNING.</h4>
+        <p>Keeing together is progress.</p>
+        <p>Working together is success.</p>
+        <img src='https://clipart-library.com/images_k/teamwork-transparent-background/teamwork-transparent-background-8.png' alt=''/>
       </div>
        <div className='team-container'>
           <h1>Our Leadership team</h1>

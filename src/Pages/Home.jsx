@@ -1,6 +1,7 @@
 import React ,{useState} from 'react'
 import '../Pages/CSS/home.css'
 import home_img from '../Component/assest/Home.png.png'
+import android_img from '../Component/assest/Android-PNG.png'
 import {Link} from 'react-router-dom'
 import Axios from 'axios'
 
@@ -59,31 +60,32 @@ Axios.post('http://localhost:8081/insert',{
             <div className='service-box'>
               <div className='service-box1'>
                 <div className='service-box-img'>
-              <img src='https://bizforcetech.com/wp-content/uploads/2022/05/choosing_managed_it_services_provider.png' alt=''/>
+                  <img src='https://www.ux-ui.net/ux/uploads/2015/05/ux-iu-logo1.png' alt='' />
               </div>
-              <h5>AI ARTIFICAL INTELEGENT</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
+              <h5>UI/UX DESING</h5>
+             <p>Our designers re-imagine and redefine user experiences across platforms and digital ecosystems   giving you a superior look & usability</p>
               </div>
               <div className='service-box1'>
               <div className='service-box-img'>
-              <img src='https://codup.co/wp-content/uploads/2021/08/full-stack-development.png' alt=''/>
+                <img src='https://cdni.iconscout.com/illustration/premium/thumb/full-stack-javascript-developer-4517286-3757254.png' alt=''/>
              </div>
               <h5>FULL STACK DEVELOPER</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
+              <p>  Our experts understand  your unique business needs and work on the  latest technologies to achieve business goals through corporate websites and microsites.</p>
+
               </div>
               <div className='service-box1'>
               <div className='service-box-img'>
-              <img src='https://www.allbusiness.com/media-library/machine-learning.jpg?id=32093222&' alt=''/>
+              <img src={android_img} alt=''/>
               </div>
-              <h5>MACHINE LEARNING</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
+              <h5>App Development</h5>
+              <p>Our mobile app development team creates beautiful apps that    will enrich the future of your digital business</p>
               </div>
               <div className='service-box1'>
               <div className='service-box-img'>
-              <img src='https://www.agroinfomart.com/images/og-subcategory1/service-provider.jpg' alt=''/>
+              <img src='https://pluspng.com/img-png/web-development-png-web-development-500.png' alt=''/>
              </div>
               <h5>WEBSITE DEVELOPER</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita magni dignissimos mollitia optio quibusdam repudiandae odit consequuntur labore.</p>
+              <p>  Our experts understand  your unique business needs and work on the  latest technologies to achieve business goals through corporate websites and microsites.</p>
               </div>
               
           </div>

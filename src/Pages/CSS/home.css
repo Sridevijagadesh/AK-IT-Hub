@@ -65,7 +65,7 @@ margin-top: 20px;
 }
 .about{
   background-color: #151414;
-  height: 70vh;
+ height: auto;
   margin-top: 70px;
 
 }
@@ -129,6 +129,21 @@ row-gap: 10px;
   width: 400px;
   height: 400px;
   box-shadow:10px 5px 20px #fa690f;
+}
+.about-info{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  
+}
+.about-info h1{
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.about-info p{
+  width: 700px;
+padding: 10px;
 }
 /* service */
 .service-header{
@@ -331,7 +346,15 @@ margin-top: 0;
   flex-direction: column;
 margin-bottom: 10px;
 }
-
+.about-info{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+margin-left: -10px;
+}
+.about-info p{
+  width: 450px;
+}
  }
 
 

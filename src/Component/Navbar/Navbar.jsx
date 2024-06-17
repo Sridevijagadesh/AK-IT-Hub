@@ -21,7 +21,7 @@ const Navbar = () => {
         <p>AK-IT-HUB</p> 
       </div>
       <ul className={active}>
-        <li ><NavLink to='/' className='link ' onClick={navToggle} >Home</NavLink></li>
+        <li onClick={window.scrollTo(0,0)} ><NavLink to='/' className='link ' onClick={navToggle} >Home</NavLink></li>
         <li><NavLink to='/about'  className='link' onClick={navToggle}>About</NavLink></li>
         <li><NavLink to='/service'  className='link' onClick={navToggle}>service</NavLink></li>
         <li><NavLink to='/team'  className='link' onClick={navToggle}>Team</NavLink></li>

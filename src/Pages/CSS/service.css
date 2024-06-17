@@ -64,3 +64,22 @@
     width: 500px;
     height: 500px;
   }
+
+  @media screen  and (max-width:1024px){
+    .service-row{
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+    .service-row1 p{
+     width: 60%;
+      margin-left: -70px;
+    }
+    .service-row img{
+      width: 300px;
+      height: 300px;
+    }
+  }

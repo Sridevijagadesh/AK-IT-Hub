@@ -8,6 +8,11 @@ import Contact from './Pages/Contact';
 import Team from './Pages/Team';
 import Navbar from './Component/Navbar/Navbar';
 import Footer from './Component/Footer/Footer';
+import Dashboard from './Admin/component/Dashboard'
+import Customer from './Admin/component/Customer';
+import AdminTeam from './Admin/component/AdminTeam';
+import AdminSevice from './Admin/component/AdminSevice';
+
 function App() {
   return (
     <div >
@@ -19,6 +24,15 @@ function App() {
   <Route path='/service' element={<Service/>}/>
   <Route path='/team' element={<Team/>}/>
   <Route path='/contact' element={<Contact/>}/>
+   <Route path='/dashboard' element={<Dashboard/>}>
+      <Route path='customer' element={<Customer/>}/>
+      <Route path='team' element={<AdminTeam/>}/>
+      <Route path='service' element={<AdminSevice/>}/>
+   
+   </Route>
+    
+
+
  </Routes>
  <Footer/>
  </BrowserRouter>

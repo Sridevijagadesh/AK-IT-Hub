@@ -1,0 +1,12 @@
+.dashboard{
+  display: flex;
+  margin-top: 90px;
+  height: 90vh;
+}
+.dashboard-sildeBar{
+  width: 20%;
+border-right: 2px solid gray;
+}
+.dashboard-content{
+  width: 80%;
+}

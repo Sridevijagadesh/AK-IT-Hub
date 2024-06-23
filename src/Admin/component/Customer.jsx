@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Axios from 'axios'
+import '../CSS/customer.css'
+import { FaX } from 'react-icons/fa6'
 
 const Customer = () => {
- const [customerData , setData] = useState('')
+ const [customerData , setData] = useState([])
 
  useEffect(()=>{
 Axios.get('http://localhost:8081/read').then((res)=>{
@@ -10,32 +12,42 @@ Axios.get('http://localhost:8081/read').then((res)=>{
 })
  },[])
 
+ //deleting the contact detail
+ const deleteData = (id)=>{
+  Axios.delete(`http://localhost:8081/delete/${id}`)
+ }
+
   return (
     <>
-    <h1>Customer Contact Details</h1>
-    <hr></hr>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Moblie Number</th>
-        <th>Message</th>
-      </tr>
-      {customerData.map((item , index)=>{
-      return<>
+    <div className='admin-contact-detail'>
+    <table width={100} align='center'>
+     
 
-      <tr>
-        <td> {}{item.name}</td>
-        <td>{item.email}</td>
-        <td>{item.number}</td>
-        <td>{item.message}</td>
-      </tr>
-      </>
-    })}
-    </table>
+          <tr>
+       <th><p>Name</p></th>
+       <th><p>Email</p></th>
+       <th><p>Number</p></th>
+       <th><p>Message</p></th>
+       <th><p>Delete</p></th>
+        </tr>
+     
+      {customerData.map((val , key)=>{
+        return<>
+        <tr>
+  
+          <td><p>{val.name}</p></td>
+          <td><p>{val.email}</p></td>
+          <td><p>{val.number}</p></td>
+          <td><p>{val.message}</p></td>
+          <td><button ><FaX color='red' fontSize='25px'onClick={()=>deleteData(val._id)}/></button></td>
+        </tr>
+        </>
+      })}
+      </table>
  
+    </div>
 
-</>
+    </>
   )
 }
 

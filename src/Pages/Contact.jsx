@@ -22,7 +22,7 @@ Axios.post('http://localhost:8081/insert',{
            <div className='contact-box'>
 
            <div className='form-container'>
-         <form  className='form' >
+         <form  className='form'   >
          <div className='form-group'>
           <label htmlFor='name' className='form-label'>Name</label>
           <input type='name' placeholder='enter your name' name='name' onChange={(e)=>{setname(e.target.value)}}/>
@@ -41,7 +41,7 @@ Axios.post('http://localhost:8081/insert',{
           <textarea placeholder='enter your message' name='message' className ='contact-textarea 'onChange={(e)=>{setmessage(e.target.value)}}/>
         
          </div>
-         <button className='btn-form' onClick={myData}>sumbit</button>
+         <button className='btn-form'  onClick={myData}>sumbit</button>
          </form>
            </div>
            </div>

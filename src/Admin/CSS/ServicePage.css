@@ -1,0 +1,47 @@
+.admin-service{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: auto;
+  height: 50vh;
+  width: 500px;
+}
+.serviceform{
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  /* width: 500px; */
+padding: 20px;
+box-shadow:10px 5px 20px #fa690f;
+margin-top: 20px;
+height: 500px;
+  
+}
+.serviceform .form-group{
+     padding: 20px;
+  margin-bottom: 10px;
+}
+.serviceform .form-group label{
+  display: block;
+  font-size: 14px;
+ font-weight: bold;
+ margin-bottom: 5px;
+}
+.serviceform .form-group input{
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+.serviceform .btn-form{
+  background-color: rgb(219, 87, 11);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+}

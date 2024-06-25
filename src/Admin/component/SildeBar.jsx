@@ -9,6 +9,7 @@ const SildeBar = () => {
       <NavLink className='nav-link' to = 'service'>services</NavLink>
       <NavLink className='nav-link'to='team'>Team</NavLink>
       <NavLink className='nav-link' to='customer'>customer</NavLink>
+      {/* <NavLink className= 'nav-link' to = 'servicePage'>add page</NavLink> */}
     </div>
   
   )

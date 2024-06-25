@@ -12,7 +12,6 @@ const Dashboard = () => {
 
       </div>
       <div className="dashboard-content">
-      <h1>hello</h1>
   <Outlet/>
       </div>
     </div>

@@ -12,6 +12,7 @@ import Dashboard from './Admin/component/Dashboard'
 import Customer from './Admin/component/Customer';
 import AdminTeam from './Admin/component/AdminTeam';
 import AdminSevice from './Admin/component/AdminSevice';
+import ServicePage from './Admin/AdminPage/ServicePage';
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
       <Route path='customer' element={<Customer/>}/>
       <Route path='team' element={<AdminTeam/>}/>
       <Route path='service' element={<AdminSevice/>}/>
-   
-   </Route>
+      <Route path='/dashboard/service/servicePage' element={<ServicePage/>}></Route>
+      </Route>
+
     
 
 

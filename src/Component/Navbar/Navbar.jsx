@@ -26,6 +26,7 @@ const Navbar = () => {
         <li><NavLink to='/service'  className='link' onClick={navToggle}>service</NavLink></li>
         <li><NavLink to='/team'  className='link' onClick={navToggle}>Team</NavLink></li>
         <li><NavLink to='/contact' className='link' onClick={navToggle}>contact</NavLink></li>
+        <li><NavLink to ='/login' className='link' onClick={navToggle}>Login</NavLink></li>
       </ul>
 <div  className={toogleIcon} onClick={navToggle}>
   <div className="line1"></div>

@@ -1,10 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import  Axios   from "axios"
 import React from 'react'
 import '../CSS/ServicePage.css'
+import { useNavigate, useParams } from "react-router-dom"
 
 
-const ServicePage = () => {
+const Update = () => {
+  const navigation = useNavigate()
   const [newUser , setNewAuthor] = useState({
     photo: '',
     course: '',
@@ -17,14 +19,41 @@ const ServicePage = () => {
   const handlephoto = (e)=>{
     setNewAuthor({...newUser , photo: e.target.files[0]})
   }
-const handleSumbit = (e)=>{
+  //featching the data by it ID
+  const {id} = useParams()
+  useEffect(()=>{
+Axios.get(`http://localhost:8081/user/serviceupdate/${id}`)
+.then(res=>{
+  setNewAuthor(res.data.description)
+  setNewAuthor(res.data.course)
+  setNewAuthor(res.data.photo)
+})
+.catch(err=> console.log(err))
+  })
+
+
+const updateForm = (e)=>{
 e.preventDefault();
+const { course, description, photo, } = e.target;
+    const arrayOfYourFiles = Array.from(photo.files);
+
 const formData = new FormData();
-formData.append('photo' , newUser.photo);
-formData.append('course' , newUser.course);
-formData.append('description' , newUser.description);
-Axios.post('http://localhost:8081/user/service', formData).then(res=>{
-  console.log(res.data)
+// formData.append('photo' , photo.value);
+formData.append('course' , course.value);
+formData.append('description' , description.value);
+arrayOfYourFiles.forEach((file) => {
+  formData.append("photo", file);
+});
+
+Axios.put(`http://localhost:8081/user/serviceupdate/${id}` ,
+ formData
+
+).then(res=>{
+  alert("Item is  updated");
+
+ navigation('/dashboard/adminservice')
+  
+  console.log(res)
 })
 .catch(err=>{
   console.log(err)
@@ -34,7 +63,7 @@ Axios.post('http://localhost:8081/user/service', formData).then(res=>{
   return (
     <div>
        <div className='admin-service' style={{marginTop:'50px'}}>
-    <form   className="serviceform" encType='multipart/form-data'>
+    <form   className="serviceform" onSubmit={updateForm} encType='multipart/form-data'>
     <div className="form-group">
       <label htmlFor='image' className=''>Image</label>
       <input type='file' accept='.png , .jpg, .jpeg'name='photo' onChange={handlephoto}></input>
@@ -49,7 +78,7 @@ Axios.post('http://localhost:8081/user/service', formData).then(res=>{
       <div className="form-group">
       <textarea type='text' name='description' onChange={handleChange} />
       </div>
-      <button className ='btn-form'onClick={handleSumbit}>sumbit</button>
+      <button className ='btn-form'>Update</button>
  
     </form>
    </div>
@@ -57,4 +86,4 @@ Axios.post('http://localhost:8081/user/service', formData).then(res=>{
   )
 }
 
-export default ServicePage
+export default Update

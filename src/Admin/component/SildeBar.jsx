@@ -6,7 +6,7 @@ const SildeBar = () => {
   return (
     <div className='silde-bar'>
       <h1>silder</h1>
-      <NavLink className='nav-link' to = 'service'>services</NavLink>
+      <NavLink className='nav-link' to = 'adminservice'>services</NavLink>
       <NavLink className='nav-link'to='team'>Team</NavLink>
       <NavLink className='nav-link' to='customer'>customer</NavLink>
       {/* <NavLink className= 'nav-link' to = 'servicePage'>add page</NavLink> */}

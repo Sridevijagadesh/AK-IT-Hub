@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/AK-IT-Hub/static/css/main.353ed453.css",
+    "main.js": "/AK-IT-Hub/static/js/main.4a09cd48.js",
+    "static/js/453.8ab44547.chunk.js": "/AK-IT-Hub/static/js/453.8ab44547.chunk.js",
+    "static/media/Home.png.png": "/AK-IT-Hub/static/media/Home.png.6e46513224a9ed2bf18c.png",
+    "static/media/pngwing.com.png": "/AK-IT-Hub/static/media/pngwing.com.ade5dd2d62713314ddc0.png",
+    "static/media/Android-PNG.png": "/AK-IT-Hub/static/media/Android-PNG.a6b6e1835d211f81f102.png",
+    "index.html": "/AK-IT-Hub/index.html",
+    "main.353ed453.css.map": "/AK-IT-Hub/static/css/main.353ed453.css.map",
+    "main.4a09cd48.js.map": "/AK-IT-Hub/static/js/main.4a09cd48.js.map",
+    "453.8ab44547.chunk.js.map": "/AK-IT-Hub/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.353ed453.css",
+    "static/js/main.4a09cd48.js"
+  ]
+}
